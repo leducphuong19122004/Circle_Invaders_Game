@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Canvas</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Game Control Buttons</h1>
+        <div class="buttons">
+            <span>A, D, S, W : Control</span>
+            <span>P : Pause / Continue game</span>
+            <span>R : Restart game</span>
+            <span>M : Turn on / off music</span>
+        </div>
+        <div class="dash-board">
+            <span>Score : <span class="score">0</span></span>
+            <span>HP :<span class="hp">100</span><span>%</span></span>
+            <span>Row : <span class="row">1</span></span>
+        </div>
+    </div>
+    <div class="start-header">Click any button to start game</div>
+    <div class="finish-header" style="display: none;">You Loss !</div>
+    <div class="row-header" style="display: none;">Row 1</div>
+    <canvas id="canvas" style="display: none;"></canvas>
+    <script src="logic.js"></script>
+</body>
+
+</html>
